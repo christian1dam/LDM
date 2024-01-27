@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2023-09-27T13:39:14.153Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.41" etag="N-ifU26Bxj8CaFoW01yD" version="21.3.8" type="device">
+  <diagram name="Página-1" id="OrXLixlB8q-Xs3Z4NRJQ">
+    <mxGraphModel dx="1165" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-16" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="90" y="20" width="560" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="140" y="60" width="460" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="70" width="440" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-2" value="" style="ellipse;whiteSpace=wrap;html=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="132.51" y="91.56" width="146.87" height="106.88" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-4" value="FOTO" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="175.94" y="130" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-5" value="TITULO" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="90" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-6" value="PEQUEÑA DESCRIPCIÓN &lt;br&gt;BIBLIOGRÁFICA" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="329" y="140" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-8" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="240" width="440" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="260" width="420" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-11" value="MÉRITOS ACADÉMICOS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="260" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-12" value="LISTA" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="160" y="300" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="380" width="420" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-14" value="MÉRITOS PROFESIONALES" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="380" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SAGG55i4NyZ4uHAPjVmj-15" value="LISTA" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="160" y="430" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

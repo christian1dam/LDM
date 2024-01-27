@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicio Javascript</h1>
+    </header>
+    <nav>
+        <ul>
+            <li onclick="getNormalColour()"><a href="#">Reset</a></li>
+            <li onclick="changeTextFromBox()"><a href="#">Cambia el texto</a></li>
+            <li onclick="newBox()"><a href="#">Crear una nueva caja</a></li>
+            <li><a href="#">Ejercicio 3</a></li>
+            <li><a href="#">Ejercicio 4</a></li>
+        </ul>
+    </nav>
+    <main class="box-container" id="main">
+        <div class="box" id="box1" onmouseenter="changeColor('red')" onclick="changeSingleBoxColour(id, 'blue')">
+            <p>Caja1</p>
+        </div>
+        <div class="box" id="box2" onmouseenter="changeColor('blue')" onclick="changeSingleBoxColourRandomly(id)">
+            <p>Caja2</p>
+        </div>
+        <div class="box" id="box3" onmouseenter="changeColor('red')" onclick="changeSingleBoxColourRandomly(id)">
+            <p>Caja 3</p>
+        </div>
+        <div class="box" id="box4" onmouseenter="changeColor('blue')">
+            <p>Caja 4</p>
+        </div>
+        <div class="box" id="box5" onmouseenter="changeColor('red')">
+            <p>Caja 5</p>
+        </div>
+    </main>
+    <footer>
+        <p>@ivanpedroche</p>
+    </footer>
+    <script src="initialJS.js"></script>
+</body>
+</html>

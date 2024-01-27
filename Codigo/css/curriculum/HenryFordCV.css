@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'LGCbody';
+    src: url(./../../font/ChristianMamani/louis_george_cafe/Louis\ George\ Cafe.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(./../../font/ChristianMamani/roboto/Roboto-Black.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.html_fordCV{
+    /* max-width: 100vw; */
+    font-size: 17px;
+}
+
+.bodyFordCV{
+    max-width: 100vw;
+    padding: 0.5% 1% 0.5% 1%;
+    height: 100vh;
+    background-color:rgb(252, 252, 252);
+}
+
+.headerFordCV{
+    border-radius: 2%;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(0, 102, 255, 0.3);
+}
+
+.imgFord{
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 55%;
+}
+
+.boxFromTitle{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tituloFordCV{
+    font-size: 50px;
+    height:fit-content;
+    font-family: 'Roboto';
+}
+
+.parrafoInicial{
+    font-family: 'LGCbody';
+}
+
+.mainFordCV{
+    background-color:rgba(0, 102, 255, 0.3);
+    border-radius: 2%;
+    margin-top: 3%;
+    height: 49.5%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    font-family: 'LGCbody';
+}
+
+.sectionFordCV{
+    margin:0 1% 0 1%;
+    padding:0 1% 0 1%;
+}
+
+.sectionFordCV > h2:nth-child(n+1){
+    margin-bottom: 0.6%;
+}
+
+.sectionFordCV > ul > li:nth-child(n+1){
+    margin-bottom: 0.6%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
