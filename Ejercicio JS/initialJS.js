@@ -18,8 +18,8 @@ function changeColor(colour) {
     }
 }
 
-function getNormalColour(){
-    location.href = "index.html";
+function resetDocumentAsOriginal(){
+    location.reload();
 }
 
 function changeSingleBoxColour(id, colour){
@@ -44,28 +44,30 @@ function arrayRandomPosition(from, to){
 }
 
 function createABox(yourHTML){
-    var fragmento = document.createDocumentFragment();
-    var temporal = document.createElement('div');
-    temporal.innerHTML = yourHTML;
-    while(temporal.firstChild){
-        fragmento.appendChild(temporal.firstChild);
-    }
-    return fragmento;
+    var codeFragment = document.createDocumentFragment();
+    var temporalTemplate = document.createElement('div');
+    temporalTemplate.innerHTML = yourHTML;
+    codeFragment.appendChild(temporalTemplate.firstChild);
+    return codeFragment;
 }
 
+
 function newBox(){
+    var boxsColour = null;
     var i = boxClassesArray.length;
     if(i%2==0){
         var fragment = createABox(`<div class="box" id="box${i+1}" onmouseenter="changeColor('blue')"><p>Caja ${i+1}</p></div>`);
         document.getElementById('main').insertBefore(fragment, document.getElementById('main').childNodes[(i*2)]);
         changeSingleBoxColourRandomly(`box${i+1}`);
+        boxsColour = document.getElementById(`box${i+1}`);
         i++;
     } else{
         var fragment = createABox(`<div class="box" id="box${i+1}" onmouseenter="changeColor('red')"><p>Caja ${i+1}</p></div>`);
         document.getElementById('main').insertBefore(fragment, document.getElementById('main').childNodes[(i*2)]);
         changeSingleBoxColourRandomly(`box${i+1}`);
+        boxsColour = document.getElementById(`box${i+1}`);
         i++;
     }
-    // boxesOriginalColoursArray.push(window.getComputedStyle(document.getElementById(`box${i}`.style.backgroundColor))); PARA ALMACENAR EL COLOR CON EL QUE SE CREA LA CAJA.
+    boxesOriginalColoursArray.push(window.getComputedStyle(document.getElementById(`box${i}`.style.backgroundColor))); //PARA ALMACENAR EL COLOR CON EL QUE SE CREA LA CAJA.
     boxClassesArray.push(`box${i}`);
 }
