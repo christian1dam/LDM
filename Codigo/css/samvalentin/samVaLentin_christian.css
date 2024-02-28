@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: .2s ease-in;
+}
+
+html {
+    font-family: Metropolis, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    --rem: 15;
+    min-height: 100vh;
+}
+
+html,
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: aliceblue;
+}
+
+*{
+    --padding-main: 3rem;
+    --header-height: 15rem;
+    --main-font-size: 10px;
+    --box-frase-padding:1em;
+    --box-frase-width:70em;
+}
+
+body {
+    position: relative;
+    max-width: 4000px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10rem;
+    padding: 0 2rem 0 2rem;
+    background-color: rgb(20, 30, 70, 0.96);
+    color: #ee194766;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: beige;
+    flex-flow: column nowrap;
+    gap: .7rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+footer {
+    width: 100%;
+    min-height: 8rem;
+    background-color: rgb(255, 105, 105, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meme{
+    position: relative;
+    display: flex;
+    padding: var(--box-frase-padding);
+    width: var(--box-frase-width);
+    aspect-ratio: 2 / 1.2;
+    flex-flow: column nowrap;
+    height: 100%;
+}
+
+.images-memes {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.frase {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    width: 300px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+    left: 24rem;
+    top: 13rem;
+}
+
+.frase-left::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+    
+}
+
+.img{   
+    width: 100%;
+    height: 100%;
+    border-top: solid var(--box-frase-padding) rgb(0, 0, 0);
+    border-bottom: solid var(--box-frase-padding) black;
+}
+
+.pieDeMeme{
+    width: 1020px;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-grow: 1; */
+    background-color: white;
+    font-size: 80px;
+}

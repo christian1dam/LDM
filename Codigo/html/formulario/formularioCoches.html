@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../css/formulario/formularioCoches.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Operaciones Matemáticas</h1>
+    </header>
+    <main>
+        <div class="form">
+            <form id="suma">
+                <div class="ajustar-box"><b>suma:</b></div>
+                <label for="primerNumero">Primer Número:</label>
+                <input type="number" id="primerNumeroSuma" name="primerNumero">
+                <label for="segundoNumero">Segundo Número:</label>
+                <input type="number" id="segundoNumeroSuma" name="segundoNumero">
+                <input value="calcular" type="button" id="submit" onclick="suma()">
+                <label for="resultado">Resultado:</label>
+                <div class="output-box">
+                    <output type="number" id="resultadoSuma"></output>
+                </div>
+            </form>
+            <form id="resta">
+                <div class="ajustar-box"><b>resta:</b></div>
+                <label for="primerNumero">Primer Número:</label>
+                <input type="number" id="primerNumeroResta" name="primerNumero">
+                <label for="segundoNumero">Segundo Número:</label>
+                <input type="number" id="segundoNumeroResta" name="segundoNumero">
+                <input value="calcular" type="button" id="submit" onclick="resta()">
+                <label for="resultado">Resultado:</label>
+                <div class="output-box">
+                    <output type="number" id="resultadoResta"></output>
+                </div>
+            </form>
+            <form id="multiplicacion">
+                <div class="ajustar-box"><b>multiplicacion:</b></div>
+                <label for="primerNumero">Primer Número:</label>
+                <input type="number" id="primerNumeroMultiplicacion" name="primerNumero">
+                <label for="segundoNumero">Segundo Número:</label>
+                <input type="number" id="segundoNumeroMultiplicacion" name="segundoNumero">
+                <input value="calcular" type="button" id="submit" onclick="multiplicacion()">
+                <label for="resultado">Resultado:</label>
+                <div class="output-box">
+                    <output type="number" id="resultadoMultiplicacion"></output>
+                </div>
+            </form>
+            <form id="division">
+                <div class="ajustar-box"><b>division:</b></div>
+                <label for="primerNumero">Primer Número:</label>
+                <input type="number" id="primerNumeroDivision" name="primerNumero">
+                <label for="segundoNumero">Segundo Número:</label>
+                <input type="number" id="segundoNumeroDivision" name="segundoNumero">
+                <input value="calcular" type="button" id="submit" onclick="division()">
+                <label for="resultado">Resultado:</label>
+                <div class="output-box">
+                    <output type="number" id="resultadoDivision"></output>
+                </div>
+            </form>
+            <form id="ecuaciones">
+                <div class="ajustar-box"><b>ecuaciones:</b></div>
+                <label for="primerNumero">Grado de la ecuación:</label>
+                <input list="gradoEcuacionesList" oninput="this.value = this.value.replace(/[^1-4]/g, '');" onkeydown="if(this.value.length==1 && event.keyCode!=8) return false;" id="gradoEcuaciones" name="gradoEcuacionesList">
+                    <datalist id="gradoEcuacionesList">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </datalist>
+            </form>
+            <form id="asignaturas">
+                <div style="width: 15%;" class="ajustar-box"><b>Compara los alumnos que están matriculado en dos asignaturas:</b></div>
+                <label for="primeraAsignatura">Primera asignatura:</label>
+                <input list="asignaturasList1" name="asignaturasList" id="getPrimeraAsignatura" onkeydown="return false;">
+                    <datalist id="asignaturasList1">
+                        <option value="Matemáticas"></option>
+                        <option value="Español"></option>
+                        <option value="Francés"></option>
+                        <option value="Física"></option>
+                    </datalist>
+                <label for="segundaAsignatura">Segunda asignatura:</label>
+                <input list="asignaturasList2" name="asignaturasList" id="getSegundaAsignatura" onkeydown="return false;">
+                    <datalist id="asignaturasList2">
+                        <option value="Matemáticas"></option>
+                        <option value="Español"></option>
+                        <option value="Francés"></option>
+                        <option value="Física"></option>
+                    </datalist> 
+                <input value="comparar" type="button" id="submitButtonCompare">
+            </form>
+            <form id="cuadradoDeCaracter">
+                <div style="width: 15%;" class="ajustar-box"><b>Crea un cuadrado del caracter que quieras:</b></div>
+                <label for="primeraAsignatura">Introduce el carácter:</label>
+                <input name="caracterCuadrado" id="getCaracterCuadrado" onkeydown="if(this.value.length==1 && event.keyCode!=8) return false;">
+                <label for="primeraAsignatura">Introduce el tamaño:</label>
+                <input name="tamanoCuadrado" id="getTamanoCuadrado" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                <input value="crear cuadrado" type="button" id="buttonCuadradoDeCaracter">
+            </form>
+        </div>
+    </main>
+    <footer>@chirstianrmch</footer>
+    <script src="./../../javascript/formulario/formulario.js"></script>
+</body>
+</html>
