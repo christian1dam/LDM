@@ -1,0 +1,250 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    --font-size: 15;
+}
+
+:host,
+.html {
+    line-height: 1.5;
+    tab-size: 4;
+    font-size: 15px;
+}
+
+.html {
+    font-family: Metropolis, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.tempBodyFormularioSolInfo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, 0.9);
+    z-index: 10;
+}
+
+.coverForm {
+    padding: calc(12/var(--font-size) * 1rem) calc(16/var(--font-size) * 1rem) calc(10/var(--font-size) * 1rem) calc(16/var(--font-size) * 1rem);
+    width: calc(352/var(--font-size) * 1rem);
+    height: calc(463.13/var(--font-size) * 1rem);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.tempHeader {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tempHeader button {
+    width: 2rem;
+    height: 2rem;
+    color: black;
+}
+
+.footerFromTemporalMainPrivacy {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerFromTemporalMainPrivacy button {
+    background-color: #368BD6;
+    width: calc(calc(121.78/var(--font-size)) * 1rem);
+}
+
+.footerFromTemporalMainPrivacy button img {
+    width: 1rem;
+}
+
+.footerFromTemporalMainPrivacy button span {
+    color: white;
+}
+
+.tempMain {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-section {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    margin-bottom: .5rem;
+}
+
+.span-h1 {
+    font-weight: bold;
+    color: #374250;
+}
+
+.field {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.input{
+    /* ESTILOS DEL INPUT COGIDOS DE LA PÁGINA WEB DEL DESARROLLADOR ORIGINAL ADPTÁNDOLO UN POCO*/
+    margin-top: .6rem;
+    width: 100%;
+    border-radius: .25rem;
+    --tw-border-opacity: 1;
+    border: solid 1px rgb(209 213 219 / var(--tw-border-opacity)); 
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding: .75rem;
+    font-size: .875rem;
+    font-weight: 400;
+    --tw-text-opacity: 1;
+    color: rgb(75 86 98 / var(--tw-text-opacity));
+    --tw-shadow: inset 0 2px 4px 0 #0000001a;
+    --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.phoneNumberAndPostalCodeFields {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+[ref="error_msg"] {
+    display: none;
+    font-size: .8rem;
+    color: rgb(255, 21, 0);
+}
+
+.tempCoche {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.tempCoche input{
+    width: calc(24/var(--font-size) * 1rem);
+    margin: 0 12px 0 0;
+}
+
+.tempCoche p{
+    display: flex;
+    flex-flow: column nowrap;
+    width: calc(204/var(--font-size) * 1rem);
+    justify-content: center;
+    padding: 0 1rem 0 1rem;
+}
+
+.tempCoche p span:first-of-type{
+    font-size: 14px;
+}
+
+.tempCoche p span:last-of-type{
+    color: #FB2E01;
+    font-size: .73rem;
+}
+
+.tempCoche p span:last-of-type b{
+    font-size: 14px;
+}
+
+.tempCoche picture img {
+    width: calc(80/var(--font-size) * 1rem);
+    height: calc(42.66/var(--font-size) * 1rem);
+    border-radius: .4rem;
+}
+
+.input-checkbox[type="checkbox"]{
+    /* ESTILOS DEL INPUT COPIADOS DEL DESARROLLADOR ORIGINAL ADAPTÁNDOLO UN POCO*/
+    margin: 0 .5rem 0 0;
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    --tw-border-opacity: 1;
+    border: solid 1px rgb(209 213 219 / var(--tw-border-opacity)); 
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(251 46 1 / var(--tw-text-opacity));
+    --tw-shadow: inset 0 2px 4px 0 #0000001a;
+    --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.input-checkbox[type="checkbox"]:checked{
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath d='M12.207 4.793a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L6.5 9.086l4.293-4.293a1 1 0 0 1 1.414 0z'/%3E%3C/svg%3E");
+    border-color: #0000;
+    background-color: currentColor;
+    background-size: 100% 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.privacy-info{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: .8rem;
+    font-size: 0.86rem;
+}
+
+.privacy-info p{
+    font-size: .80rem;
+    width: 100%;
+    align-self: center;
+    height: fit-content;
+    color: #374250;
+}
+
+.privacy-info p span{
+    color: #FB2E01;
+}
+
+.formularioInfoCoches{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.formularioInfoCoches button{
+    /* ESTILOS DEL BUTTON COPIADOS DEL DESARROLLADOR ORIGINAL ADAPTÁNNDOLO UN POCO */
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    border-radius: .375rem;
+    border: solid white 1px;
+    padding: .75rem 1.25rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.25rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .3s;
+    background-color: rgb(251 46 1);
+    color: rgb(255 255 255);
+}
+
+.footer-section{
+    font-size: .7rem;
+    text-align: justify;
+    padding: 1rem 0;
+}
