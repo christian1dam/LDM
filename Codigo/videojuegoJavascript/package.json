@@ -1,0 +1,28 @@
+{
+  "name": "videojuegojavascript",
+  "version": "1.0.0",
+  "description": "videojuego creado con html, Javscript y css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christian1dam/LDM.git"
+  },
+  "keywords": [
+    "Coches",
+    "Videojuego",
+    "Javascript",
+    "html5",
+    "css3",
+    "lenguajeDeMarcas",
+    "2024"
+  ],
+  "author": "christianrmch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christian1dam/LDM/issues"
+  },
+  "homepage": "https://github.com/christian1dam/LDM#readme"
+}
