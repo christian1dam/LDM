@@ -1,0 +1,22 @@
+##VSCODE && VS CONFIG 
+.vs/
+.vscode/
+#-----------------------------------------------------
+Codigo/config/
+Codigo/errorLogs/
+Codigo/first-app/
+Documentacion/logs/
+##LINEAS DE ABAJO SOLO APLICAN PARA GIT BRANCH videoJuego2aEvaluacion
+Codigo/videojuegoJavascript/YTutorial/
+Codigo/videojuegoJavascript/Screenshots/
+Codigo/videojuegoJavascript/Free2dgameAsset_CarsSprites.zip
+Codigo/videojuegoJavascript/gw4c6lw7or28-AudiR8.rar
+Codigo/videojuegoJavascript/craftpix-889156-free-racing-game-kit.zip
+#-----------------------------------------------------
+##A PRIORI NO SE VAN A UTILIZAR
+Codigo/videojuegoJavascript/Free2dgameAsset_CarsSprites/
+Codigo/videojuegoJavascript/craftpix-889156-free-racing-game-kit/
+Codigo/videojuegoJavascript/gw4c6lw7or28-AudiR8/
+#-----------------------------------------------------
+##UNITY
+Codigo/UnityProjects/
