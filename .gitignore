@@ -1,6 +1,6 @@
 ##VSCODE && VS CONFIG 
-.vs/
-.vscode/
+*vs*/
+*vscode*/
 #-----------------------------------------------------
 Codigo/config/
 Codigo/errorLogs/
