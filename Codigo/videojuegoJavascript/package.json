@@ -1,6 +1,6 @@
 {
   "name": "videojuegojavascript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "videojuego creado con html, Javscript y css",
   "main": "index.js",
   "scripts": {

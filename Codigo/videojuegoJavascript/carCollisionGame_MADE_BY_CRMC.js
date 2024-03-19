@@ -14,7 +14,7 @@ enemigo.addEventListener('animationiteration', () => {
     contador++;
     velocidadEnemigo += 0.001;
     aumentarVelocidadEnemgio(velocidadEnemigo);
-    if (velocidadEnemigo >= 1.027) { // Aqui se gana porque despues el coche enemigo se buggea
+    if (velocidadEnemigo >= 1.027) {
         youWin();
     }
 })
@@ -26,7 +26,7 @@ function aumentarVelocidadEnemgio(v) {
 
 window.addEventListener('keydown', (e) => {
     if (e.key == 'ArrowDown') {
-        cocheJugadorTop = parseInt(window.getComputedStyle(cocheJugador).getPropertyValue('top'));
+        let cocheJugadorTop = parseInt(window.getComputedStyle(cocheJugador).getPropertyValue('top'));
         if (cocheJugadorTop < 250) {
             cocheJugador.style.top = (cocheJugadorTop + 43.3) + "px";
         }
@@ -38,7 +38,7 @@ window.addEventListener('keydown', (e) => {
         }
     }
     if (e.key == 'ArrowRight') {
-        cocheJugadorleft = parseInt(window.getComputedStyle(cocheJugador).getPropertyValue('left'));
+        let cocheJugadorleft = parseInt(window.getComputedStyle(cocheJugador).getPropertyValue('left'));
         if (cocheJugadorleft < 160) {
             cocheJugador.style.left = (cocheJugadorleft + 43.3) + "px";
         }
