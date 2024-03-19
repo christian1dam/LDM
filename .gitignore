@@ -20,3 +20,13 @@ Codigo/videojuegoJavascript/gw4c6lw7or28-AudiR8/
 #-----------------------------------------------------
 ##UNITY
 Codigo/UnityProjects/
+#GAMEMAKER
+GameMakerProjects/
+#ABORTAR VIDEOJUEGO 1
+Codigo/videojuegoJavascript/GIMP_IMAGES/
+Codigo/videojuegoJavascript/Animaciones/
+Codigo/videojuegoJavascript/JSON/
+Codigo/videojuegoJavascript/node_modules/
+Codigo/videojuegoJavascript/node.js
+Codigo/videojuegoJavascript/package-lock.json
+

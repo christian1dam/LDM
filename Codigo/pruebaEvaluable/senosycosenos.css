@@ -1,0 +1,21 @@
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+header{
+    padding-bottom:1rem;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

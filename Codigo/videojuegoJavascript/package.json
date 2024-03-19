@@ -24,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/christian1dam/LDM/issues"
   },
-  "homepage": "https://github.com/christian1dam/LDM#readme"
+  "homepage": "https://github.com/christian1dam/LDM#readme",
+  "dependencies": {
+    "image-size": "^1.1.1",
+    "nodemon": "^3.1.0"
+  }
 }

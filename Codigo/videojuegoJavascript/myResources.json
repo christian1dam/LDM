@@ -1,12 +1,18 @@
 {
-    "resources": [
+    "resources": [ 
         {
-            "name": "JavaScript Game Development Course for Beginners",
-            "url": "https://www.youtube.com/watch?v=GFO_txvwK_c"
-        }, 
+            "name": "Car Racing Game In JavaScript | JavaScript Game Development Tutorial | JavaScript | Simplilearn",
+            "url": "https://youtu.be/2kVTU4Gaguk?si=1K_UUtzEzp-arwH4",
+            "description": "Voy a seguir este tutorial que es un juego muy basico sin demasiadas complicaciones"
+        },
         {
-            "name": "The Unity Tutorial For Complete Beginners",
-            "ur": "https://www.youtube.com/watch?v=XtQMytORBmM"
+            "name": "Game Maker",
+            "url": "https://gamemaker.io/en/bundles",
+            "description": "Sitio del que me descargué las imagenes de los coches"
+        },
+        {
+            "name": "Imagen de la carretera",
+            "url": "https://opengameart.org/content/road-for-2d-games"
         }
     ]
 }
