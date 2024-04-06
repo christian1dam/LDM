@@ -1,25 +1,3 @@
-<mxfile host="app.diagrams.net" modified="2023-12-13T23:43:36.470Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="epd_uCgnECk6g4kP9kAc" version="22.1.8" type="device">
-  <diagram name="Página-1" id="nFski9OW_rrOOVrqKtm8">
-    <mxGraphModel dx="1042" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="g64t9-HRtT9vprYxO4G2-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="260" y="110" width="300" height="300" as="geometry" />
-        </mxCell>
-        <mxCell id="g64t9-HRtT9vprYxO4G2-3" value="TITULO PAGINA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="110" width="300" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="g64t9-HRtT9vprYxO4G2-4" value="FOOTER" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="350" width="300" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="g64t9-HRtT9vprYxO4G2-5" value="&lt;br&gt;&lt;br&gt;BODY DIALOGO&lt;br&gt;INTERVENCIONES&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="338" y="210" width="144" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="g64t9-HRtT9vprYxO4G2-6" value="HEADER DIALOGO" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="210" width="140" height="40" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+version https://git-lfs.github.com/spec/v1
+oid sha256:38dadad193fc4eea109ed87857a3792b7ffa8a7a94dd88904e05041f875aea8b
+size 1823
