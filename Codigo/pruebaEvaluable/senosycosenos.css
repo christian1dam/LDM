@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76a17ba495414784b69708fbb36b4b3666ea619b58412390e3edca6b435695dd
-size 364
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+header{
+    padding-bottom:1rem;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

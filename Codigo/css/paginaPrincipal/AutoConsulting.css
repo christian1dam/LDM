@@ -1,3 +1,319 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70939c7a202f05a38ddc67d8ee6ad7dcfbf99a7ebe5ad9a378976edf900a4b2e
-size 5813
+:root {
+    /* this for Mobile */
+    --min-width: 320px;
+    /* this for laptops and so on */
+    --max-width: 2000px;
+    /* this for Mobile */
+    --min-height: 480px;
+    --font-size: 15px;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    text-align: center;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    font-size: var(--font-size);
+    /* display: none; */
+}
+
+/* VAMOS A PROBAR MOBILE FIRST -> no ha salido bien. He terminado cambiando a solo para escritorio. Hay codigo que se ha quedado como antes por no romper más la paigna */
+
+body {
+    display: flex;
+    background-color: antiquewhite;
+    flex-flow: row wrap;
+    width: 100dvw;
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+    /* max-width: var(--max-width);*/
+    /* Aunque el height y el min-height coincidan, se necesita poner el height
+    como medida absoluta para que los porcentajes de
+    los elementos internos se adapten correctamente.*/
+    min-height: var(--min-height);
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: flex-start;
+}
+
+header h1 {
+    height: 100%;
+    font-size: 2.5rem;
+    background-color: burlywood;
+    box-shadow: 0 1rem 1rem burlywood;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    top: 0px;
+    width: 100%;
+    height: 2rem;
+    border: solid 1px;
+    padding: 0.5%;
+    background-color: rgb(128, 128, 128, 0.7);
+}
+
+.rrss {
+    display: flex;
+    width: 10rem;
+    height: 100%;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 5rem;
+    height: auto;
+    image-rendering: optimizeSpeed;
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+.icono_desplegable {
+    background-image: none;
+}
+
+.lista_not_hover {
+    display: flex;
+    position: absolute;
+    border: solid 1px black;
+    width: 70%;
+    height: 100dvh;
+    top: 0;
+    left: -100%;
+    flex-flow: column;
+    justify-content: flex-start;
+    line-break: anywhere;
+    background-color: rgba(224, 224, 224, 0.766);
+    transition: left .5s linear;
+    overflow-y: scroll;
+    z-index: 99;
+}
+
+.opcion_menu {
+    border: solid white 1px;
+    background-color: rgba(22, 21, 21, 0.896);
+    width: 100%;
+    height: 2.5rem;
+    box-shadow: 0.002rem 0.09rem 0.02rem black;
+
+    &&>* {
+        color: whitesmoke;
+        font-size: 17px;
+    }
+}
+
+.sub_lista_menu {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: fit-content;
+    align-items: flex-end;
+}
+
+.sub_lista_menu>li {
+    width: 85%;
+    height: 2rem;
+    background-color: rgb(163, 161, 161);
+    box-shadow: 0.002rem 0.09rem 0.02rem rgb(163, 161, 161);
+    margin-bottom: 0.2rem;
+}
+
+.sub_lista_menu>li:last-child {
+    width: 85%;
+    height: 2rem;
+    background-color: rgb(163, 161, 161);
+    box-shadow: 0.002rem 0.09rem 0.02rem rgb(163, 161, 161);
+    margin-bottom: 0.5rem;
+}
+
+.slider {
+    align-self: flex-start;
+    margin: auto;
+    display: flex;
+    width: 60%;
+    height: 20rem;
+    border-radius: 1rem;
+    box-shadow: 0.4rem 0.4rem 1rem grey;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.contenedor_slides {
+    display: grid;
+    grid-template-columns: 100% 100% 100% 100% 100%;
+    animation: slider_imagenes infinite 25s;
+    animation-direction: alternate;
+}
+
+.contenedor_slides:hover {
+    animation-play-state: paused;
+}
+
+.contenedor_slides > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.9;
+}
+
+
+.noticia{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    height: fit-content;
+    align-content:space-between;
+}
+
+.noticia_header{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.noticia_header > p {
+    text-transform: uppercase;
+    color: rgb(55, 55, 205);
+}
+
+.imagen_articulo > img{
+    width: 100%;
+    height: 100%;
+}
+
+.imagen_articulo {
+    margin-bottom: 1rem;
+}
+
+.articulo{
+    width: 100%;    
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.iframe{
+    width: 320px;
+}
+
+.asLeft,
+.asRight {
+    width: 20%;
+    height:fit-content;
+    word-wrap: break-word;
+    display: flex;
+    flex-flow: column;
+    justify-self: center;
+    align-items: center;
+    margin: auto;
+    gap: 1rem;
+}
+
+.asLeft > a > img{
+    width: 100%;
+    height: 40rem;
+    object-fit: fill;
+}
+
+.video{
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    min-height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+.main{
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: 2rem;
+    width: 100%;
+    min-height: 15%;
+    align-self: flex-end;
+    padding: 2%;
+    background-color: aliceblue;
+}
+
+@keyframes slider_imagenes {
+
+    1.5%,
+    19% {
+        transform: translateX(0rem);
+    }
+
+    21.5%,
+    39% {
+        transform: translateX(-100%);
+    }
+
+    41.5%,
+    59% {
+        transform: translateX(-200%);
+    }
+
+    61.5%,
+    79% {
+        transform: translateX(-300%);
+    }
+
+    81.5%,
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+

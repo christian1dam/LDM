@@ -1,3 +1,109 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b869957788948a301bb2c3aa2683ae6fdc36ea7c503d3a473903626950f5d2fc
-size 2086
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    background-image: linear-gradient(45deg, #7c7e80 50%, #323333 50%);
+    min-height: 800px;
+}
+
+.videojuego {
+    height: 500px;
+    width: 310px;
+    border: 1px solid black;
+    padding-left: 1.6rem;
+    padding-right: 3.5rem;
+    margin: 1rem auto;
+    background-image: url(./../../img/juego/carCollissionGame/Roads/road_0.png);
+    background-size: contain;
+    overflow: hidden;
+}
+
+.enemigo {
+    height: 100px;
+    width: 43.3px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    animation: move 1s linear infinite;
+    background-image: url(./../../img/juego/carCollissionGame/High_Speed/white.png);
+    background-size: contain;
+}
+
+.enemigo img {
+    height: 100px;
+}
+
+.cocheJugador{
+    height: 100px;
+    width: 43.3px;
+    position: relative;
+    top: 250px;
+    left: 130px;
+    text-align: center;
+    background-image: url(./../../img/juego/carCollissionGame/High_Speed/red.png);
+    background-size: contain;
+}
+
+.cocheJugador img{
+    height: 100px;
+}
+
+.resultado{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(231, 105, 105);
+    margin: 1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    display: none; 
+}   
+
+.puntos{
+    font-size: 2.2rem;
+    color: goldenrod;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: cyan;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.resultadoWin{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(231, 105, 105);
+    margin: 1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    display: none; 
+}   
+
+@keyframes move{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 501px;
+    }       
+}

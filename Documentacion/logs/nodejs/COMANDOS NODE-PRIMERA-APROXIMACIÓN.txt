@@ -1,3 +1,376 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c83773e62190c07c165e51f315dc00d01788b36ad7d644d4317599bed528620
-size 15446
+COMANDOS NODE
+--------------
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo>mkdir first-app
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo>cd first-app/
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>code .
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+Hello Christian
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\app.js:6
+console.log(window);
+            ^
+
+ReferenceError: window is not defined
+    at Object.<anonymous> (C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\app.js:6:13)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.11.1
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+christian
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+undefined
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  id: '.',
+  path: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  exports: {},
+  filename: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app\\app.js",
+  loaded: false,
+  children: [],
+  paths: [
+    "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app\\node_modules",
+    "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\node_modules",
+    "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\node_modules",
+    "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\node_modules",
+    "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\node_modules",
+    'C:\\Users\\1ºDAM_Christian\\node_modules',
+    'C:\\Users\\node_modules',
+    'C:\\node_modules'
+  ]
+}
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{ log: [Function: log] }
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{ log: [Function: log] }
+hola y adios
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{ log: [Function: log] }
+hola y adios
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+hola y adios
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>jshint app.js
+"jshint" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>jshint app.js
+"jshint" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+hola y adios
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\logger.js:1
+var x=;
+      ^
+
+SyntaxError: Unexpected token ';'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\app.js:1:13)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+
+Node.js v20.11.1
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\logger.js
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app
+hola y adios
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node --version
+v20.11.1
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\app.js:3
+var pathObject = path.path(__filename);
+                      ^
+
+TypeError: path.path is not a function
+    at Object.<anonymous> (C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\app.js:3:23)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.11.1
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 5856411648
+Total memory: 16539365376
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 5850595328
+Total memory: 16539365376
+----------------
+[ 'app.js', 'logger.js' ]
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 5835014144
+Total memory: 16539365376
+----------------
+Result:  [ 'app.js', 'logger.js' ]
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 6111899648
+Total memory: 16539365376
+----------------
+Error:  [Error: ENOENT: no such file or directory, scandir 'C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\%'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app\\%"
+}
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 5992865792
+Total memory: 16539365376
+----------------
+----------------
+Result:  [ 'app.js', 'logger.js' ]
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 5936807936
+Total memory: 16539365376
+----------------
+----------------
+Listener called
+Result:  [ 'app.js', 'logger.js' ]
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 6693322752
+Total memory: 16539365376
+----------------
+----------------
+Listener called { id: 1, url: 'http://' }
+Result:  [ 'app.js', 'logger.js' ]
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 6876274688
+Total memory: 16539365376
+----------------
+----------------
+Listener called { id: 1, url: 'http://' }
+----------------
+You have logged in:  { id: 2, status: 'logged in' }
+Result:  [ 'app.js', 'logger.js' ]
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 6458335232
+Total memory: 16539365376
+----------------
+----------------
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\logger.js
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app
+message
+Result:  [ 'app.js', 'logger.js' ]
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 6591795200
+Total memory: 16539365376
+----------------
+----------------
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\logger.js
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app
+message
+Listener called { id: 1, url: 'http://' }
+Result:  [ 'app.js', 'logger.js' ]
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 6452580352
+Total memory: 16539365376
+----------------
+----------------
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\logger.js
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app
+message
+Listener called { id: 1, url: 'http://' }
+Result:  [ 'app.js', 'logger.js' ]
+
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 6636097536
+Total memory: 16539365376
+----------------
+----------------
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\logger.js
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app
+message
+Listener called { id: 1, url: 'http://' }
+----------------
+Listening on port 3000...
+Result:  [ 'app.js', 'logger.js' ]
+New connection...
+New connection...
+^C
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 6400827392
+Total memory: 16539365376
+----------------
+----------------
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\logger.js
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app
+message
+Listener called { id: 1, url: 'http://' }
+----------------
+Listening on port 3000...
+Result:  [ 'app.js', 'logger.js' ]
+^C
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>node app.js
+{
+  root: 'C:\\',
+  dir: "C:\\Users\\1ºDAM_Christian\\OneDrive - Conselleria d'Educació\\Escritorio\\lenguajeDeMarcas\\Codigo\\first-app",
+  base: 'app.js',
+  ext: '.js',
+  name: 'app'
+}
+----------------
+Free memory: 6432665600
+Total memory: 16539365376
+----------------
+----------------
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app\logger.js
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app
+message
+Listener called { id: 1, url: 'http://' }
+----------------
+Listening on port 3000...
+Result:  [ 'app.js', 'logger.js' ]
+^C
+C:\Users\1ºDAM_Christian\OneDrive - Conselleria d'Educació\Escritorio\lenguajeDeMarcas\Codigo\first-app>

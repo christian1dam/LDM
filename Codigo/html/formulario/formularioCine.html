@@ -1,3 +1,84 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cb4f3f5094a882637a2cc11ed39fc44b1b9ded8f400fa247d73af4b7a40578d0
-size 4207
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/formulario/formularioCine.css">
+    <script src="https://kit.fontawesome.com/8a2dd8b532.js" crossorigin="anonymous"></script>
+    <title>Formulario Cine</title>
+</head>
+<body>
+    <main>
+        <div class = "container">
+            <form>
+                <div class="h1">
+                    <h1> Entradas de Cine </h1>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                </div>
+                <div class="form-group">
+                         <select class="pelicula" >
+                            <option value="">Seleciona la pelicula</option>
+                            <option value="primero">Los Asesinos De La Luna</option>
+                            <option value="segundo">The Marvels</option>
+                            <option value="tercero">Five Nights At Freddy's</option>
+                        </select>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="form-group">
+                    <label for="codigo-postal">Código postal</label>
+                    <input type="text" id="codigo-postal" name="codigo-postal" required>
+                </div>
+                <div>
+                    <p>Seleccione el método de pago:</p>
+                    <div class="payment-methods">
+                        <label for="visa">
+                            <input type="radio" id="visa" name="metodo-pago" value="visa">
+                            VISA <i class="fa-brands fa-cc-visa"></i>
+                        </label>
+                        <label for="mastercard">
+                            <input type="radio" id="mastercard" name="metodo-pago" value="mastercard">
+                            Mastercard <i class="fa-brands fa-cc-mastercard"></i>
+                        </label>
+                        <label for="paypal">
+                            <input type="radio" id="paypal" name="metodo-pago" value="paypal">
+                            Paypal <i class="fa-brands fa-cc-paypal"></i>
+                        </label>
+                    </div>
+                </div>
+                     <div class="form-group1">
+                        <input type="checkbox" id="aceptar-privacidad" name="aceptar-cookies" required>
+                            <h3 class="texto">Acepto el uso de cookies</h3>
+                    </div>
+                    <div class="form-group1">
+                        <input type="checkbox" id="aceptar-privacidad" name="aceptar-privacidad" required>
+                        <h3 class="texto">Acepto la política de privacidad</h3>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Enviar" class="boton">
+                    </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

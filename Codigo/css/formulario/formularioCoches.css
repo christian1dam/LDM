@@ -1,3 +1,83 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebe2f24efdbd2597fa801e88ab24277baafc2d2dc2f596e1def7620860b938ae
-size 1398
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: .2s ease-in;
+}
+
+html {
+    font-family: Metropolis, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    --rem: 15;
+    min-height: 100vh;
+}
+
+html,
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: aliceblue;
+}
+
+body{
+    position: relative;
+    max-width: 4000px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10rem;
+    padding: 0 2rem 0 2rem;
+    background-color: rgb(20, 30, 70, 0.96);
+    color: #ee194766;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    background-color: beige;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    min-height: 8rem;
+    background-color: rgb(255, 105, 105, 0.8);
+    display: flex; align-items: center; justify-content: center;
+}
+
+.form{
+    border: solid green 2px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+.form > form{
+    border: solid red 1px;
+    width: 100%; 
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ajustar-box{
+    border: solid red 1px;
+    width: 8rem;
+}
+
+.output-box{
+    width: 166.4px;
+    height: 19.2px;
+    border: solid grey 1px;
+}

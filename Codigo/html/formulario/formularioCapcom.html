@@ -1,3 +1,88 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cdc5aef5686c3481996c3e88b60b325a2af4b5f0dc99e186d2d70475d2299217
-size 4349
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/formulario/formularioCapcom.css">
+    <link rel="icon" type="image/x-icon" href="../../img/dialogo/dialogoResidentEvil/faviconresidentevil.ico">
+    <title>Formulario Capcom</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="../../img/dialogo/dialogoResidentEvil/faviconresidentevil.ico">
+            <div class="header-right">
+                <a class="active" href="formularioCapcom.html">Formulario</a>
+                <a target="_blank" href="../reseña/ReseñaCapcom.html">Reseña</a>
+                <a target="_blank" href="../comparativa/ComparativaResidentEvil.html">Comparativa</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <form>
+                <img class="imglogo" src="../../img/formulario/Capcomlogo.jpg">
+                <h1>Registro</h1>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre de usuario" required>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" oninput="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="15" placeholder="Introduce tu numero de telefono" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Introduce tu correo electrónico" required>
+
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <br> <br>
+                <label class="alinear">
+                    <label class="textcheck" for="cookies"><b>Acepto el uso de cookies</b></label>
+                    <label class="checkbox-label" for="cookies">
+                        <input class="checknone" type="checkbox" id="cookies" name="cookies">
+                        <div class="checked" id="resultado"></div>
+                    </label>
+                </label>
+
+                <label class="alinear">
+                    <label class="textcheck" for="privacidad"><b>Acepto la política de privacidad</b></label>
+                    <label class="checkbox-label" for="privacidad">
+                        <input class="checknone" type="checkbox" id="privacidad" name="privacidad">
+                        <div class="checked" id="resultado2"></div>
+                    </label>
+                </label>
+                <br>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Introduce tu direccion" required>
+
+                <label for="codigo">Código postal:</label>
+                <input type="number" id="codigo" name="codigo" placeholder="Introduce el código postal de tu localidad" required>
+
+                <p class="metodos">Métodos de pago:</p>
+                <div class="pagosdiv">
+                    <i class="fa-brands fa-cc-visa fa-2xl" style="color: #000000;"></i>
+                    <input class="textcheckc" type="radio" id="visa" name="pago" value="visa">
+                    <br>
+                    <i class="fa-brands fa-cc-mastercard fa-2xl" style="color: #000000;"></i>
+                    <input class="textcheckc" type="radio" id="mastercard" name="pago" value="mastercard">
+                    <br>
+                    <i class="fa-brands fa-cc-paypal fa-2xl" style="color: #000000;"></i>
+                    <input class="textcheckc" type="radio" id="paypal" name="pago" value="paypal">
+                </div>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/9e9fc5fc24.js" crossorigin="anonymous"></script>
+<script src="../../js/formulario/formularioCapcom.js"></script>
+
+</html>

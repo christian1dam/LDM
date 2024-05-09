@@ -1,3 +1,116 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21261cb101e59fc9998e61cef98ab20767936f15bd207bfedfdd34a2c9bee21f
-size 1763
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body{
+    background:linear-gradient(45deg, blueviolet, lightgreen);
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+header{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 10px 15px rgba(0,0,0,.2);
+    font-size: 35px;
+    padding: 15px;
+}
+
+nav {
+    background-color: #666;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 2%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+p{
+    color:white;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    text-align: center;
+    width: 25%;
+}
+
+li a:hover{
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 75%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+    margin: 10%;
+}
+
+
+
+.box:hover{
+    box-shadow: 0 15px 20px rgba(0,0,0,.3);
+    transform: scale(1.2);
+}
+
+#box1{
+    background-color: indigo;
+}
+
+#box2{
+    background-color: violet;
+}
+
+#box3{
+    background-color: blue;
+}
+
+#box4{
+    background-color: green;
+}
+
+#box5{
+    background-color: red;
+}
