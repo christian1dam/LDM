@@ -329,14 +329,15 @@ body{
     top : 45%;
     left: 35%;
     transform: translate(-50%, -50%);
-    width : 500px;
-    height: 250px;
+    width : 600px;
+    height: 450px;
     background-color: rgba(240,240,240,0.8);
     padding: 15px;
     text-align: center;
     box-shadow: 0 0 10px(0,0,0,0.1);
     animation: slideIn 1s forwards; 
     border-radius: 3%;
+    border-color: black;
 }
 
 .aviso-cookies form{
