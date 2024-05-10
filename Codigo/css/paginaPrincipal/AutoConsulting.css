@@ -348,4 +348,25 @@ body{
     margin-bottom: 10px;
 }
 
-.a
+.aviso-cookies button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.aviso-cookies button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50%) translateX(-100%); 
+    }
+    to {
+        transform: translateY(-50%) translateX(0);
+    }
+}
