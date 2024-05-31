@@ -22,7 +22,7 @@ body {
     padding-left: 1.6rem;
     padding-right: 3.5rem;
     margin: 1rem auto;
-    background-image: url(./../../img/juego/carCollissionGame/Roads/road_0.png);
+    background-image: url(../../../img/juego/carCollissionGame/Roads/road_0.png);
     background-size: contain;
     overflow: hidden;
 }
@@ -35,7 +35,7 @@ body {
     left: 0px;
     text-align: center;
     animation: move 1s linear infinite;
-    background-image: url(./../../img/juego/carCollissionGame/High_Speed/white.png);
+    background-image: url(../../../img/juego/carCollissionGame/High_Speed/white.png);
     background-size: contain;
 }
 
@@ -50,7 +50,7 @@ body {
     top: 250px;
     left: 130px;
     text-align: center;
-    background-image: url(./../../img/juego/carCollissionGame/High_Speed/red.png);
+    background-image: url(../../../img/juego/carCollissionGame/High_Speed/red.png);
     background-size: contain;
 }
 
