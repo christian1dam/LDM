@@ -4,14 +4,13 @@ html {
     --rem: 15;
 }
 
-
 html::-webkit-scrollbar{
     display: none;
 }
 
 html,
 body {
-    font-size: 15px;
+    font-size: 2px;
     min-height: 100vh;
     background-color: aliceblue;
     min-width: 847px;
@@ -304,8 +303,5 @@ footer {
 .button:hover {
     background-color: rgb(251 46 1/var(--tw-text-opacity));
     border: solid 1px black;
-
-    & span {
-        color: #fff;
-    }
+    color: #fff;
 }
