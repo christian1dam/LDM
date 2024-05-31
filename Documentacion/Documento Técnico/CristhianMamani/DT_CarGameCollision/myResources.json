@@ -1,0 +1,31 @@
+{
+    "resources": [ 
+        {
+            "name": "MiniJuegos",
+            "url": "https://www.minijuegos.com/",
+            "description": "Sitio del que cojo ideas"
+        },
+        {
+            "name": "Game Maker",
+            "url": "https://gamemaker.io/en/bundles",
+            "description": "Sitio del que me descargué las imagenes de los coches"
+        },
+        {
+            "name": "Tutorial de YT sobre juegos con javascript, abortado muy complejo",
+            "url": "https://www.youtube.com/watch?v=GFO_txvwK_c&t=7761s"
+        },
+        {
+            "name": "Tutorial de YT que he seguido",
+            "url": "https://www.youtube.com/watch?v=2kVTU4Gaguk&t=684s"
+        },
+        {
+            "name": "Imagen de la carretera",
+            "url": "https://opengameart.org/content/road-for-2d-games"
+        }, 
+        {
+            "name": "sweezy-cursors.com",
+            "url": "https://sweezy-cursors.com/cursor/cars-lightning-mcqueen/",
+            "description": "Sitio del que he cogido la imagen de los cursores"
+        }
+    ]
+}
