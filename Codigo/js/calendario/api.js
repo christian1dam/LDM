@@ -1,7 +1,7 @@
 export const getConsejo = () => {
     var xhr = new XMLHttpRequest(); //se instancia un objeto XMLHttpRrequest() para hacer la solicitud a la API.
 
-    xhr.open('GET', 'http://localhost:3000/api/phrase?' + new Date().getDate(), true);//se hace una peticion HTTP de tipo GET que consiste en obtener datos de la API
+    xhr.open('GET', 'http://localhost:3000/api/phrase?' + new Date().getMilliseconds(), true);//se hace una peticion HTTP de tipo GET que consiste en obtener datos de la API
 
     xhr.onload = function () {
         if (xhr.status === 200) {
