@@ -10,11 +10,10 @@ export const getConsejo = () => {
             document.getElementById('autor').textContent = response.author;
         } else {
             console.log('Error al obtener la frase');
-            alert("eror");
         }
     }; //Se recoje los datos de la API y se trabaja con ellos. En este caso la api devuelve un archivo JSON con el que se debe trabajar. response = JSON.parse() transforma el JSON en contenido facilmente manipulable
 
-    xhr.send();
+    xhr.send(); //envio de la peticion a la API. Se establece después del manejo de la respuesta por buenas practicas. 
 }
 
 

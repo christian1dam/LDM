@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calendario Automoviles 2024</title>
+    <link rel="stylesheet" href="./../../css/calendario/calendarioAutomoviles.css">
 </head>
 
 <body>
-    <header id="header">
+    <header class="mainHeader" id="header">
         <h1>Trabajo de Calendario</h1>
     </header>
     <main>
 
-        <section id="contenedorCalendario">
+        <section class="contenedorCalendario" id="contenedorCalendario">
 
-            <section class="estiloConsejo"> <!--Muestra un mensaje de animos en inglés. Cogido de la api publica de Google-->
-                <p id="autor"></p>
+            <section class="estiloFrase"> <!--Muestra una frase cogida de una api publica de github-->
                 <p id="frase"></p>
+                <p id="autor"></p>
             </section>
             
-            <header>
-                <div id="mostrarMesYAnyo"></div> <!--Muestra el mes y el año del calendario, se controla desde JS-->
+            <header class="subHeader">
+                <div class="mostrarMesYAnyo" id="mostrarMesYAnyo"></div> <!--Muestra el mes y el año del calendario, se controla desde JS-->
     
                 <form class="botones">
                     <button id="anteriorMes">&laquo; Anterior</button> <!--&laquo; simbolo << -->
@@ -29,7 +30,7 @@
                 </form>
             </header>
 
-            <section id="diasSemana"> <!--Columnas del calendario-->
+            <section class="diasSemana" id="diasSemana"> <!--Columnas del calendario-->
                 <div>Lunes</div>
                 <div>Martes</div>
                 <div>Miércoles</div>
@@ -39,7 +40,7 @@
                 <div>Domingo</div>
             </section>
     
-            <div id="calendario"></div> <!--Despliega los días del calendario, se controla desde JS-->
+            <div class="calendario" id="calendario"></div> <!--Despliega los días del calendario, se controla desde JS-->
 
         </section>
 
@@ -63,6 +64,9 @@
 
         <!--  -->
     </main>
+    <footer class="footer">
+        <p>trabajo realizado por Christianrmch</p>
+    </footer>
 
     <script src="./../../js/calendario/calendarioAutomoviles.js" type="module" defer></script> 
     <!-- defer -> se asegura de que el JS solamentes se ejecuta una vez cargado el HTML en el navegador -->

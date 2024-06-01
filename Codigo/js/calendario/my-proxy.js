@@ -1,5 +1,5 @@
-import express from 'express';
-import axios from 'axios';
+const express = require('express');
+const axios = require('axios');
 const app = express();
 
 app.use((req, res, next) => {
@@ -10,7 +10,7 @@ app.use((req, res, next) => {
 
 app.get('/api/phrase', async (req, res) => {
     try {
-        const response = await get('https://frasedeldia.azurewebsites.net/api/phrase');
+        const response = await axios.get('https://frasedeldia.azurewebsites.net/api/phrase');
         res.json(response.data);
     } catch (error) {
         res.status(500).send('Error al obtener la frase');
