@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <header id="header">
+        <h1>Trabajo de Calendario</h1>
+    </header>
+    <main>
+
+        <section id="contenedorCalendario">
+
+            <section class="estiloConsejo"> <!--Muestra un mensaje de animos en inglés. Cogido de la api publica de Google-->
+                <p id="consejo"></p>
+            </section>
+            
+            <header>
+                <div id="mostrarMesYAnyo"></div> <!--Muestra el mes y el año del calendario, se controla desde JS-->
     
+                <form class="botones">
+                    <button id="anteriorMes">&laquo; Anterior</button> <!--&laquo; simbolo << -->
+                    <button id="proximoMes">Siguiente &raquo;</button> <!--&raquo; simbolo >> -->
+                </form>
+            </header>
+
+            <section id="diasSemana"> <!--Columnas del calendario-->
+                <div>Lunes</div>
+                <div>Martes</div>
+                <div>Miércoles</div>
+                <div>Jueves</div>
+                <div>Viernes</div>
+                <div>Sábado</div>
+                <div>Domingo</div>
+            </section>
+    
+            <div id="calendario"></div> <!--Despliega los días del calendario, se controla desde JS-->
+
+        </section>
+
+        <section id="crearEvento"> <!--Se mostrará cuando se seleccione una fecha y permitirá crear un evento-->
+            <h2>Crear evento</h2>
+            <form>
+                <input type="text" id="setTituloEvento" placeholder="Introduce el título del evento">
+                <button id="guardarEvento">Guardar</button>
+                <button id="cancelar">Cancelar</button>
+            </form>
+        </section>
+
+        <section id="VerYBorrarEvento"> <!--Se mostrará cuando se seleccione una fecha y permitirá crear un evento-->
+            <h2>Evento</h2>
+            <p id="mostrarEvento"></p>
+            <form>
+                <button id="borrarEvento">Borrar</button>
+                <button id="cerrar">Cerrar</button>
+            </form>
+        </section>
+
+        <!--  -->
+    </main>
+
+    <script src="./../../js/calendario/calendarioAutomoviles.js" type="module" defer></script> 
+    <!-- defer -> se asegura de que el JS solamentes se ejecuta una vez cargado el HTML en el navegador -->
+    <!--type="module" -> indica que el archivo js puede importar y exportar funciones, objetos o variables entre diferentes archivos js.-->
 </body>
+
 </html>
