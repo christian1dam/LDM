@@ -1,13 +1,3 @@
-.vs
-.vscode
-#### DENTRO DE CODIGO QUE NO QUIERO QUE SE SUBA AL REPO
-Codigo/config
-Codigo/config/app.js
-Codigo/config/package-lock.json
-Codigo/config/package.json
-Codigo/errorLogs
-Codigo/first-app
-Codigo/videojuegoJavascript
-##
-GameMakerProjects
-UnityProjects
+#ARCHIVOS node_modules
+
+Codigo/js/calendario/node_modules
