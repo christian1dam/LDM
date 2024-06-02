@@ -26,11 +26,17 @@ a{
 }
 
 @font-face {
+    font-family: 'Roboto_form';
+    src: url(./../../font/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
     font-family: 'Roboto_else';
     src: url(./../../font/roboto/Roboto-Regular.ttf);
 }
 
 body{
+    font-family: 'Roboto_else';
     width: 100dvw;
     display: flex;
     flex-flow: column;
@@ -203,6 +209,58 @@ main{
     justify-content: center;
     height: 7rem;
     background-color: #F08080;
+}
+
+.crearEvento, .verYBorrarEvento{
+    display: none; /*PARA QUE SOLAMENTE SE MUESTRE AL HACER CLICK A UNA FECHA*/
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    background-color: #c6954c42;
+    border-radius: 1em;
+    padding: 1rem;
+    border: solid red;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+    h2, form{
+        width: 80%;
+    }
+
+    h2{
+        font-size: 2em;
+        font-family: 'Roboto_header';
+        padding: 1em;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    form{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+
+        .setTituloEvento{
+            input-security:auto;
+            border: none;
+            border-radius: 0.3em;
+            padding: 1em;
+            width: 30%;
+            text-align: center;
+            font-family: 'Roboto_form';
+        }
+
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button:first-of-type {
+                margin-right: 0.2rem;
+            }
+        }
+    }
 }
 
 @media (max-width: 800px) {

@@ -45,21 +45,25 @@
 
         </section>
 
-        <section id="crearEvento"> <!--Se mostrará cuando se seleccione una fecha y permitirá crear un evento-->
+        <section class="crearEvento" id="crearEvento"> <!--Se mostrará cuando se seleccione una fecha y permitirá crear un evento-->
             <h2>Crear evento</h2>
             <form>
-                <input type="text" id="setTituloEvento" placeholder="Introduce el título del evento">
-                <button id="guardarEvento">Guardar</button>
-                <button id="cancelar">Cancelar</button>
+                <input class="setTituloEvento" type="text" id="setTituloEvento" placeholder="Introduce el título del evento">
+                <div>
+                    <button id="guardarEvento">Guardar</button>
+                    <button id="cancelar">Cancelar</button>
+                </div>
             </form>
         </section>
 
-        <section id="VerYBorrarEvento"> <!--Se mostrará cuando se seleccione una fecha y permitirá crear un evento-->
+        <section class="verYBorrarEvento" id="VerYBorrarEvento"> <!--Se mostrará cuando se seleccione una fecha y permitirá crear un evento-->
             <h2>Evento</h2>
-            <p id="mostrarEvento"></p>
             <form>
-                <button id="borrarEvento">Borrar</button>
-                <button id="cerrar">Cerrar</button>
+                <p id="mostrarEvento"></p>
+                <div>
+                    <button id="borrarEvento">Borrar</button>
+                    <button id="cerrar">Cerrar</button>
+                </div>
             </form>
         </section>
 
