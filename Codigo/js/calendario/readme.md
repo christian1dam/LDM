@@ -22,4 +22,4 @@ Después:
 
     nodemon Codigo/js/calendario/my-proxy.js
 
-Una vez hecho tardará poco en cargar la frase.
+Una vez hecho tardará unos segundos en cargar la frase.
