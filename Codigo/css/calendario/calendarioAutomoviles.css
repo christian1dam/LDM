@@ -172,6 +172,10 @@ main{
     font-weight: bold;
 }
 
+.diaActual:hover, .diaPerteneceAlMes:hover{
+    border: red solid 1px;
+}
+
 .diaPerteneceAlMes{
     background-color: #ffffff; /* Fondo blanco */
     color: #333333; /* Texto oscuro */
