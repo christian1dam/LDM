@@ -160,10 +160,36 @@ main{
     align-items: center;
     justify-content: center;
     height: 7rem;
-    background-color: rgb(165, 165, 165);
-    border-radius: 0.5rem;
-    color: white;
 }
+
+.diaActual{
+    background-color: #ffcc00; /* Fondo amarillo */
+    color: #333333; /* Texto oscuro */
+    border: 1px solid #cccc00; /* Borde suave */
+    padding: 10px;
+    text-align: center;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.diaPerteneceAlMes{
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333333; /* Texto oscuro */
+    border: 1px solid #dddddd; /* Borde suave */
+    padding: 10px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.diaNoPerteneceAlMes{
+    background-color: #f0f0f0; /* Fondo gris claro */
+    color: #aaaaaa; /* Texto gris */
+    border: 1px solid #dddddd; /* Borde suave */
+    padding: 10px;
+    text-align: center;
+    list-style-type: none;
+}
+
 
 .footer{
     width: 100%;
