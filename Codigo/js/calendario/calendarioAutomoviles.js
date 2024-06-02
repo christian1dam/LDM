@@ -1,12 +1,13 @@
 import { getConsejo } from './api.js';
 
-
 const mesYanyo = document.getElementById('mostrarMesYAnyo');
 const calendario = document.getElementById('calendario');
+var mesAnterior = document.getElementById('anteriorMes');
+var mesSiguiente = document.getElementById('proximoMes');
 
 let fecha = new Date();
 let anyoActual = fecha.getFullYear();
-let mesActual = fecha.getMonth();
+var mesActual = fecha.getMonth();
 
 const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
     "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -24,3 +25,15 @@ var cargarCalendario = () => {
 
 getConsejo();
 cargarCalendario();
+
+mesAnterior.addEventListener("click", (e) => {
+    e.preventDefault();
+    mesActual -= 1;
+    cargarCalendario();
+});
+
+mesSiguiente.addEventListener("click", (e) => {
+    e.preventDefault();
+    mesActual += 1;
+    cargarCalendario();
+});
