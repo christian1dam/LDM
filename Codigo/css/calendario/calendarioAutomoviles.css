@@ -1,21 +1,21 @@
-body, html{
+body, html {
     height: 100%;
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 15px;
 }
 
-*::after, *::before{
+*::after, *::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -35,7 +35,7 @@ a{
     src: url(./../../font/roboto/Roboto-Regular.ttf);
 }
 
-body{
+body {
     font-family: 'Roboto_else';
     width: 100dvw;
     display: flex;
@@ -60,7 +60,7 @@ body{
     text-align: center;
 }
 
-.contenedorCalendario{
+.contenedorCalendario {
     width: 100%;
     display: flex;
     flex-flow: column;
@@ -70,7 +70,7 @@ body{
     padding: 1rem;
 }
 
-.estiloFrase{
+.estiloFrase {
     border-top: solid 0.2rem grey;
     border-left: solid 0.2rem grey;
     border-right: solid 0.2rem black;
@@ -80,25 +80,25 @@ body{
     margin-bottom: 1rem;
     width: 80%;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-flow: row;
     background-color: #00000024;
     gap: 0.5rem;
 }
 
-.estiloFrase p{
+.estiloFrase p {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.9em;
     text-align: center;
-    color:rgb(175, 128, 40);
+    color: rgb(175, 128, 40);
 }
 
-.subHeader{
+.subHeader {
     display: flex;
     width: 80%;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -114,20 +114,20 @@ button {
     color: var(--cocoa-shade);
 }
 
-.diasSemana{
+.diasSemana {
     display: flex;
     flex-flow: row;
     width: 80%;
     justify-content: space-between;
     gap: 0.5rem;
-    
-    & div{
-        width: 100%;
-        text-align: center;
-    }
 }
 
-main{
+.diasSemana div {
+    width: 100%;
+    text-align: center;
+}
+
+main {
     display: flex;
     flex-flow: column;
     width: fit-content;
@@ -136,72 +136,71 @@ main{
     max-width: 100rem;
     padding: 2rem;
     margin-bottom: 2rem;
-    flex-grow: 1; /*Para que ocupe todo el espacio disponible y el footer quede debajo */
+    flex-grow: 1;
 }
 
-.botones{
+.botones {
     gap: 0.2rem;
     display: flex;
     align-items: center;
 }
 
-.mostrarMesYAnyo{
+.mostrarMesYAnyo {
     padding: 1rem;
     font-size: 2rem;
     color: #008080;
 }
 
-.calendario{
+.calendario {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(14%, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(14%, 1fr));
     gap: 0.2rem;
     width: 80%;
     max-width: 80%;
-    border: solid 1px red;
 }
 
-.calendario li{
+.calendario li {
     list-style-type: none;
     display: flex;
+    align-items: space-between;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 7rem;
 }
 
-.diaActual{
-    background-color: #ffcc00; /* Fondo amarillo */
-    color: #333333; /* Texto oscuro */
-    border: 1px solid #cccc00; /* Borde suave */
+.diaActual {
+    background-color: #ffcc00;
+    color: #333333;
     padding: 10px;
     text-align: center;
     list-style-type: none;
     font-weight: bold;
 }
 
-.diaActual:hover, .diaPerteneceAlMes:hover{
+.diaActual:hover, .diaPerteneceAlMes:hover {
     border: red solid 1px;
 }
 
-.diaPerteneceAlMes{
-    background-color: #ffffff; /* Fondo blanco */
-    color: #333333; /* Texto oscuro */
-    border: 1px solid #dddddd; /* Borde suave */
-    padding: 10px;
+.diaPerteneceAlMes {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #dddddd;
+    padding: 1rem;
     text-align: center;
     list-style-type: none;
 }
 
-.diaNoPerteneceAlMes{
-    background-color: #f0f0f0; /* Fondo gris claro */
-    color: #aaaaaa; /* Texto gris */
-    border: 1px solid #dddddd; /* Borde suave */
-    padding: 10px;
+.diaNoPerteneceAlMes {
+    background-color: #f0f0f0;
+    color: #aaaaaa;
+    border: 1px solid #dddddd;
+    padding: 1rem;
     text-align: center;
     list-style-type: none;
 }
 
-
-.footer{
+.footer {
     width: 100%;
     min-height: 7rem;
     display: flex;
@@ -211,66 +210,78 @@ main{
     background-color: #F08080;
 }
 
-.crearEvento, .verYBorrarEvento{
-    display: none; /*PARA QUE SOLAMENTE SE MUESTRE AL HACER CLICK A UNA FECHA*/
+.crearEvento, .verYBorrarEvento {
+    display: none;
     width: 100%;
     flex-flow: column;
     align-items: center;
     background-color: #c6954c42;
     border-radius: 1em;
     padding: 1rem;
-    border: solid red;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+}
 
-    h2, form{
-        width: 80%;
-    }
+.crearEvento h2, .verYBorrarEvento h2, .crearEvento form, .verYBorrarEvento form {
+    width: 80%;
+}
 
-    h2{
-        font-size: 2em;
-        font-family: 'Roboto_header';
-        padding: 1em;
-        padding-bottom: 0;
-        padding-top: 0;
-        margin-bottom: 1rem;
-    }
+.crearEvento h2, .verYBorrarEvento h2 {
+    font-size: 2em;
+    font-family: 'Roboto_header';
+    padding: 1em;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 1rem;
+}
 
-    form{
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
+.crearEvento form, .verYBorrarEvento form {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
 
-        .setTituloEvento{
-            input-security:auto;
-            border: none;
-            border-radius: 0.3em;
-            padding: 1em;
-            width: 30%;
-            text-align: center;
-            font-family: 'Roboto_form';
-        }
+.crearEvento .setTituloEvento, .verYBorrarEvento .setTituloEvento {
+    border: none;
+    border-radius: 0.3em;
+    padding: 1em;
+    width: 30%;
+    text-align: center;
+    font-family: 'Roboto_form';
+}
 
-        div{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+.crearEvento .error, .verYBorrarEvento .error {
+    border: 2px solid red;
+}
 
-            button:first-of-type {
-                margin-right: 0.2rem;
-            }
-        }
-    }
+.crearEvento form div, .verYBorrarEvento form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crearEvento form div button:first-of-type, .verYBorrarEvento form div button:first-of-type {
+    margin-right: 0.2rem;
+}
+
+.eventoTexto {
+    background-color: #ffa500;
+    color: white;
+    border-radius: 0.5em;
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 800px) {
-    *{
+    * {
         font-size: 14px;
     }
 }
 
 @media (max-width: 600px) {
-    *{
+    * {
         font-size: 11px;
     }
 }

@@ -1,7 +1,7 @@
 export const getConsejo = () => {
     var xhr = new XMLHttpRequest(); //se instancia un objeto XMLHttpRrequest() para hacer la solicitud a la API.
 
-    xhr.open('GET', 'http://localhost:3000/api/phrase?' + new Date().getMilliseconds(), true);//se hace una peticion HTTP de tipo GET que consiste en obtener datos de la API
+    xhr.open('GET', 'http://localhost:3000/api/phrase?' + new Date().getMilliseconds(), true);//se hace una peticion HTTP de tipo GET que consiste en obtener datos de la API, en este caso se hace mediante localhost para evadir las medidas de seguiridad CORPS del navegador.
 
     xhr.onload = function () {
         if (xhr.status === 200) {
@@ -15,5 +15,3 @@ export const getConsejo = () => {
 
     xhr.send(); //envio de la peticion a la API. Se establece después del manejo de la respuesta por buenas practicas. 
 }
-
-

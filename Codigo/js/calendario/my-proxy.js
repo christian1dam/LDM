@@ -1,3 +1,5 @@
+//codigo de la configuracion del proxy obtenido de chatgpt. 
+
 const express = require('express');
 const axios = require('axios');
 const app = express();
